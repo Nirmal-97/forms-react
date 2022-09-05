@@ -10,6 +10,19 @@
             class="form-control"
             formControlName="username"
             >
+
+            <div>
+              <h4>Your Hobbies</h4>
+              <button 
+              class="btn btn-default"
+              type="button"
+              (click)="onAddHobby()"
+              >Add Hobby</button>
+            </div>
+            <!-- <span
+            *ngIf="!signUpForm.get('username').valid && signUpForm.get('username').touched"
+            class="help-block"
+            >Please Enter a valid Username!</span> -->
           </div>
           <button class="btn btn-default" type="button">Suggest an Username</button>
           <div class="form-group">
